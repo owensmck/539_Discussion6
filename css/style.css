@@ -1,0 +1,131 @@
+body{
+    line-height: 2;
+}
+
+
+header, nav{
+    padding: 10px 5px 10px 5px;
+    margin: 2px 1px 2px 1px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display:inline-block;
+    margin: 10px;
+    padding: 5px;
+    font-size: 36px;
+    background-color: gray;
+    
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 10px;
+}
+
+
+h1{
+   /*Set font and font size*/
+font-family:'Times New Roman', Times, serif;
+font-size: 48px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+h3{
+    /*Set font size*/
+    font-family:'Times New Roman', Times, serif;
+    font-size: 26px;
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin:15px;
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-gap:10px;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+  border: 3px black solid;
+  border-radius: 3px;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+@media  (min-width: 769px){
+    .grid{  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90%;
+        margin: 0 auto;
+        grid-gap:10px;
+    }
+    .grid img{
+        /* Set width, margin, and display */
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        border: 2px solid black;
+        
+    }
+
+}
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+}
+    
+
+p + p {
+     /* Set indentation */
+  }
+  
+p{
+     /* Set margin */
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+}
